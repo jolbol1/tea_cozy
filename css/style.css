@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1024px) {
+    #navigation {
+        display: none;
+    }
+    .logo-container {
+        width: 100% !important;
+        justify-content: center;
+    }
+}
+
 html {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
@@ -18,26 +28,26 @@ html {
 main, footer {
     position: relative;
     margin: 0;
-    top: 69px;
+    top: 3.136rem;
 }
 
 .logo-container, .nav {
     margin-top: 0;
     display: flex;
-    height: 69px;
-    margin-left: 10px;
+    height: 3.136rem;
+    margin-left: 0.455rem;
     width: 50%;
     align-items: center;
 }
 
 .logo-container img {
-    height: 50px;
+    height: 2.273rem;
 }
 
 header {
     background-color: black;
     position: fixed;
-    height: 69px;
+    height: 3.136rem;
     top: 0;
     right: 0;
     left: 0;
@@ -48,7 +58,6 @@ header {
 }
 
 .nav {
-    font-size: 1rem;
     justify-content: space-between;
     margin: 0;
     width: 35%;
@@ -56,16 +65,17 @@ header {
     text-decoration: underline;
 }
 
-.mission, .tea-month, .locations {
+.mission, .tea-month, .locations, .content {
     margin: 0 auto;
     margin-bottom: 2%;
     display: flex;
-    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     justify-content: center;
     align-items: center;
-    width: 1200px;
+    width: 75%;
+    max-width: 1200px;
     flex-flow: column nowrap;
 }
 
@@ -73,7 +83,6 @@ header {
     display: inline-flex;
     background-color: black;
     width: 100%;
-    max-width: 1200px;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
@@ -81,11 +90,12 @@ header {
 
 h2, h4 {
     width: 100%;
-    margin: 10px 0;
+    margin: 0.455rem 0;
 }
 
-#mission {
+.mission {
     background-image: url(../img/img-mission-background.jpg);
+    height: 32rem;
 
 }
 
@@ -96,38 +106,38 @@ h2, h4 {
 
 
 .tea-showcase {
-    height: 700px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
 
 .tea-showcase img {
-    height: 200px;
-    width: 300px;
+    height: 9.09rem;
+    width: 13.64rem;
 }
 
 .tea-showcase figcaption {
-    margin-top: 10px;
+    margin-top: 0.455rem;
 }
 
 .location-boxes {
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: row wrap;
 }
 
 .location-boxes div {
     background-color: black;
-    min-width: 300px;
-    max-width: 300px;
-    margin: 0 40px;
+    width: 13.64rem;
+    margin: 1rem 1.82rem;
     opacity: 1;
 }
 
 .locations {
-    height: 500px;
+    min-height: 22.73rem;
 }
 
 .contact-info {
