@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    
+}
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+
+    text-align: center;
+}
+
+main, footer {
+    position: relative;
+    margin: 0;
+    top: 69px;
+}
+
+.logo-container, .nav {
+    margin-top: 0;
+    display: flex;
+    height: 69px;
+    margin-left: 10px;
+    width: 50%;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    height: 69px;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    z-index: 15;
+}
+
+.nav {
+    font-size: 1rem;
+    justify-content: space-between;
+    margin: 0;
+    width: 35%;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.mission, .tea-month, .locations {
+    margin: 0 auto;
+    margin-bottom: 2%;
+    display: flex;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-flow: column nowrap;
+}
+
+.mission-banner, .month-header {
+    display: inline-flex;
+    background-color: black;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+h2, h4 {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#mission {
+    background-image: url(../img/img-mission-background.jpg);
+
+}
+
+#locations {
+    background-image: url(../img/img-locations-background.jpg);
+
+}
+
+
+.tea-showcase {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.tea-showcase img {
+    height: 200px;
+    width: 300px;
+}
+
+.tea-showcase figcaption {
+    margin-top: 10px;
+}
+
+.location-boxes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-boxes div {
+    background-color: black;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0 40px;
+    opacity: 1;
+}
+
+.locations {
+    height: 500px;
+}
+
+.contact-info {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.copyright {
+    text-align: left;
+}
