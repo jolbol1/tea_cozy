@@ -1,22 +1,10 @@
-/* Set the box method globally
-* {
+/* Set the box method globally */
+ * {
     box-sizing: border-box;
     
 }
 *::before, *::after {
     box-sizing: border-box;
-}
-*/
-
-/* Remove nav bar for mobiles. Leave logo in middle */
-@media only screen and (max-width: 1024px) {
-    #navigation {
-        display: none;
-    }
-    .logo-container {
-        width: 100% !important;
-        justify-content: center;
-    }
 }
 
 /* Element Selectors */
@@ -164,11 +152,29 @@ a:link, a:visited, a:hover, a:focus, a:active {
 }
 
 
+/* Remove nav bar for mobiles. Leave logo in middle */
+@media only screen and (max-width: 1024px) {
+    #navigation {
+        display: none;
+    }
+    .logo-container {
+        width: 100% !important;
+        justify-content: center;
+    }
+}
 
+@media only screen and (max-width: 850px) {
+    .copyright {
+        text-align: center;
+    }
+    .locations, .mission, .mission-banner, .tea-month, .tea-showcase, .tea-showcase figure, .tea-showcase img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
+    .tea-showcase img {
+        height: auto;
+    }
 
-
-
-
-
-
+}
