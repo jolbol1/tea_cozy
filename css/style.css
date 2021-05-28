@@ -7,6 +7,15 @@
     box-sizing: border-box;
 }
 
+
+#month-anchor:target {
+    display: block;
+    position: relative;
+    top: -69px; 
+    visibility: hidden;
+  }
+  
+
 /* Element Selectors */
 html {
     font-family: Helvetica, sans-serif;
