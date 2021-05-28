@@ -7,23 +7,17 @@
     box-sizing: border-box;
 }
 
-
-#month-anchor:target {
-    display: block;
-    position: relative;
-    top: -69px; 
-    visibility: hidden;
-  }
-  
-
 /* Element Selectors */
 html {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
-    background-color: black;
-    opacity: 0.9;
+    background-color:#191919;
     text-align: center;
+}
+
+body {
+    margin: 0;
 }
 
 header {
@@ -43,6 +37,12 @@ main, footer {
     position: relative;
     margin: 0;
     top: 3.136rem;
+}
+
+footer {
+    background-color: black;
+    padding-top: 1rem;
+    border-top: 1px solid seashell;
 }
 
 h2, h4 {
@@ -103,7 +103,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
 
 .mission-banner, .month-header {
     display: inline-flex;
-    background-color: black;
+    background-color: #191919;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -161,6 +161,15 @@ a:link, a:visited, a:hover, a:focus, a:active {
     text-align: left;
 }
 
+/* Make sure anchor links adjust for the fixed header */
+
+#month-anchor:target {
+    display: block;
+    position: relative;
+    top: -69px; 
+    visibility: hidden;
+  }
+  
 
 /* Remove nav bar for mobiles. Leave logo in middle */
 @media only screen and (max-width: 1024px) {
