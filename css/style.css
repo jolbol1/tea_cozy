@@ -62,21 +62,41 @@ a:link, a:visited, a:hover, a:focus, a:active {
     display: flex;
     height: 3.136rem;
     margin-left: 0.455rem;
-    width: 50%;
+
     align-items: center;
 }
+
+.logo-container {
+    width: 25%;
+}
+
+.nav {
+    width: 75%;
+}
+
 
 .logo-container img {
     height: 2.273rem;
 }
 
+
 .nav {
-    justify-content: space-between;
-    margin: 0;
-    width: 35%;
-    margin-right: 10px;
-    text-decoration: underline;
+    justify-content: flex-end;
 }
+
+.nav ul {
+    justify-content: flex-end;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.nav li {
+    margin: 0 0.6rem;
+}
+
 
 /* Main 3 Sections */
 .mission, .tea-month, .locations, .content {
@@ -171,8 +191,29 @@ a:link, a:visited, a:hover, a:focus, a:active {
   }
   
 
+/* Make the nav bar a column, adjust header height to fit. */
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 4rem;
+        align-items: center;
+    }
+    .nav ul {
+        flex-flow: column wrap;
+        width: 75%;
+        margin-right: 0.5rem;
+    }
+    .nav li {
+        margin: 0.03rem 0;
+        padding: 0;
+    }
+
+}
+
+
 /* Remove nav bar for mobiles. Leave logo in middle */
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 330px) {
     #navigation {
         display: none;
     }
@@ -181,6 +222,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
         justify-content: center;
     }
 }
+
 
 @media only screen and (max-width: 425px) {
     .copyright {
