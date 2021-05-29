@@ -57,7 +57,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
 
 /* Header */
 
-.logo-container, .nav {
+.logo-container, nav {
     margin-top: 0;
     display: flex;
     height: 3.136rem;
@@ -70,7 +70,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
     width: 25%;
 }
 
-.nav {
+nav {
     width: 75%;
 }
 
@@ -80,11 +80,11 @@ a:link, a:visited, a:hover, a:focus, a:active {
 }
 
 
-.nav {
+nav {
     justify-content: flex-end;
 }
 
-.nav ul {
+nav ul {
     justify-content: flex-end;
     display: flex;
     flex-flow: row wrap;
@@ -93,7 +93,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
     width: 100%;
 }
 
-.nav li {
+nav li {
     margin: 0 0.6rem;
 }
 
@@ -198,12 +198,12 @@ a:link, a:visited, a:hover, a:focus, a:active {
         height: 4rem;
         align-items: center;
     }
-    .nav ul {
+    nav ul {
         flex-flow: column wrap;
         width: 75%;
         margin-right: 0.5rem;
     }
-    .nav li {
+    nav li {
         margin: 0.03rem 0;
         padding: 0;
     }
@@ -214,7 +214,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
 /* Remove nav bar for mobiles. Leave logo in middle */
 
 @media only screen and (max-width: 330px) {
-    #navigation {
+    nav {
         display: none;
     }
     .logo-container {
